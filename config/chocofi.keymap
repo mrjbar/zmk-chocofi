@@ -180,16 +180,16 @@
 
         default_layer {
             // ----------------------------------------------------------------------------------------------------------------------------
-            // |    Q    |    W    |    F    |    P    |    B    |                      |    J    |    L    |    I    |    Y    |    ;    |
-            // |    A    |    R    |    S    |    T    |    G    |                      |    M    |    N    |    E    |    I    |    O    |
-            // |    Z    |    X    |    C    |    D    |    V    |                      |    K    |    H    |    ,    |    .    |    /    |
-            //                               |   ESC   |  SPACE  |   TAB   |  |  RETURN |BACKSPACE|   DEL   |
+            // |    Q    |    W    |    E    |    R    |    T    |                      |    Y    |    U    |    I    |    O    |    P    |
+            // |    A    |    S    |    D    |    F    |    G    |                      |    H    |    J    |    K    |    L    |    :    |
+            // |    Z    |    X    |    C    |    V    |    B    |                      |    N    |    M    |    ,    |    .    |    /    |
+            //                               |   ESC   |  SPACE  |   TAB   |  |  BACKSPACE |ENTER|   DEL   |
 
             bindings = <
-  &kp Q            &kp W         &kp F        &kp P            &kp B   &kp J        &kp L         &kp U        &kp Y  &kp BACKSPACE
-  &kp A  &hml LEFT_GUI R  &hml LCTRL S  &hml LALT T            &kp G   &kp M  &hmr RALT N  &hmr RCTRL E  &hmr RGUI I          &kp O
-  &kp Z            &kp X         &kp C        &kp D            &kp V   &kp K        &kp H     &kp COMMA      &kp DOT      &kp SLASH
-                              &kp LGUI    &kp SPACE  &lt 1 LG(LA(D))   &mo 2   &kp RSHIFT  &kp LEFT_ALT
+  &kp Q            &kp W         &kp E        &kp R            &kp T   &kp Y        &kp U         &kp I        &kp O  &kp P
+  &kp A  &hml LEFT_GUI S  &hml LCTRL D  &hml LALT F            &kp G   &kp H  &hmr RALT J  &hmr RCTRL K  &hmr RGUI L          &kp COLON
+  &kp Z            &kp X         &kp C        &kp V            &kp B   &kp N        &kp M     &kp COMMA      &kp DOT      &kp SLASH
+                              &kp ESC    &kp SPACE  &lt 1 LG(LA(D))   &kp BACKSPACE   &kp ENTER  &kp DEL
             >;
         };
 
