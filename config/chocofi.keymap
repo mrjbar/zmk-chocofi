@@ -68,6 +68,14 @@
 
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32>;// <---[[right-hand keys]]
         };
+        mo_kp: behavior_mo_kp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "mo_kp";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&kp>;
+        };
         osm: one_shot_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "ONE_SHOT_MODS";
@@ -186,19 +194,19 @@
             //                               |   ESC   |  SPACE  |   TAB   |  |  BACKSPACE |ENTER|   DEL   |
 
             bindings = <
-  &kp Q            &kp W         &kp E        &kp R            &kp T   &kp Y        &kp U         &kp I        &kp O  &kp P
-  &kp A  &hml LEFT_GUI S  &hml LCTRL D  &hml LALT F            &kp G   &kp H  &hmr RALT J  &hmr RCTRL K  &hmr RGUI L          &kp COLON
-  &kp Z            &kp X         &kp C        &kp V            &kp B   &kp N        &kp M     &kp COMMA      &kp DOT      &kp SLASH
-                              &kp ESC    &kp SPACE  &lt 1 LG(LA(D))   &kp BACKSPACE   &kp ENTER  &kp DEL
+  &kp Q     &kp W           &kp E         &kp R          &kp T              &kp Y      &kp U     &kp I    &kp O  &kp P
+  &kp A     &hml LALT S     &hml LCTRL D  &mo_kp 1 F     &hml LEFT_GUI G    &hmr RGUI H  &mo_kp 1 J  &hmr RCTRL K  &hmr RALT L          &kp COLON
+  &kp Z     &kp X           &kp C         &kp V          &kp B              &kp N        &kp M     &kp COMMA      &kp DOT      &kp SLASH
+                            &kp ESC       &kp SPACE      &kp TAB            &kp BACKSPACE   &kp ENTER  &kp DEL
             >;
         };
 
         num_layer {
             bindings = <
-   &kp ESC        &kp HOME          &kp UP          &kp END    &kp UNDER  &kp MINUS  &kp N7      &kp N8  &kp N9    &grvtilde
-   &kp TAB  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LA(TAB)  &kp EQUAL  &kp N4      &kp N5  &kp N6    &apoquote
- &kp LG(Z)       &kp LG(X)       &kp LG(C)            &none    &bslhpipe   &kp PLUS  &kp N1      &kp N2  &kp N3  &eurodollar
-                                     &none            &none       &trans      &mo 3  &kp N0  &kp PERIOD
+  &none   &kp N7    &kp N8   &kp N9     &none           &none   &kp LPAR     &kp RPAR     &kp EQUAL     &kp BACKSLASH 
+  &none   &kp N4    &kp N5   &kp N6     &none           &none   &kp LBKT     &kp RBKT     &kp MINUS     &kp SEMICOLON 
+  &none   &kp N1    &kp N2   &kp N3     &none           &none   &kp GRAVE    &kp COMMA    &kp DOT       &kp SLASH 
+                    &none    &none      &kp N0          &none   &none        &none
             >;
         };
 
