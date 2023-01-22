@@ -3,7 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define BASE 0
-#define EXT  1
+#define SYM  1
 #define NAV  2
 #define FUN  3
 #define ADJ  4// macros definition
@@ -205,13 +205,13 @@
 
             bindings = <
   &kp Q     &kp W           &kp E         &kp R          &kp T              &kp Y           &kp U           &kp I           &kp O               &kp P
-  &kp A     &hml LALT S     &hml LCTRL D  &mo_kp 1 F     &hml LEFT_GUI G    &hmr RGUI H     &mo_kp 1 J      &hmr RCTRL K    &hmr RALT L         &kp COLON
+  &kp A     &hml LALT S     &hml LCTRL D  &mo_kp SYM F     &hml LEFT_GUI G    &hmr RGUI H     &mo_kp SYM J      &hmr RCTRL K    &hmr RALT L         &kp COLON
   &kp Z     &kp X           &kp C         &kp V          &kp B              &kp N           &kp M           &kp COMMA       &kp DOT             &kp SLASH
-                            &kp ESC       &spacetab      &mo_kp 2 ESC          &kp BACKSPACE   &kp ENTER       &kp DEL
+                            &kp LSHIFT    &spacetab      &mo_kp NAV ESC       &kp BACKSPACE   &kp ENTER       &caps_word
             >;
         };
 
-        num_layer {
+        sym_layer {
             bindings = <
   &none   AS(N7)    AS(N8)   AS(N9)     &none           &none   &kp LPAR     &kp RPAR     &kp EQUAL     &kp BACKSLASH 
   &none   AS(N4)    AS(N5)   AS(N6)     &none           &none   &kp LBKT     &kp RBKT     &kp MINUS     &kp SEMICOLON 
