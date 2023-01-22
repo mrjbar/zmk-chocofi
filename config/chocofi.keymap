@@ -206,8 +206,8 @@
             bindings = <
   &kp Q     &kp W           &kp E         &kp R          &kp T              &kp Y           &kp U           &kp I           &kp O               &kp P
   &kp A     &hml LALT S     &hml LCTRL D  &mo_kp SYM F     &hml LEFT_GUI G    &hmr RGUI H     &mo_kp SYM J      &hmr RCTRL K    &hmr RALT L         &kp COLON
-  &kp Z     &kp X           &kp C         &kp V          &kp B              &kp N           &kp M           &kp COMMA       &kp DOT             &kp SLASH
-                            &kp LSHIFT    &spacetab      &mo_kp NAV ESC       &kp BACKSPACE   &kp ENTER       &caps_word
+  &kp Z     &hml LG(X) X    &hml LG(C) C  &hml LG(V) V          &kp B              &kp N           &kp M           &kp COMMA       &kp DOT             &kp SLASH
+                            &osm LSHIFT    &spacetab      &mo_kp NAV ESC       &kp BACKSPACE   &kp ENTER       &caps_word
             >;
         };
 
