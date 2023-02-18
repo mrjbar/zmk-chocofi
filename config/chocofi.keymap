@@ -210,7 +210,7 @@
             bindings = <
   &kp LBRC   &kp AMPS  &kp STAR  &kp LPAR   &kp RBRC           &none   &kp LPAR       &kp RPAR     AS(EQUAL)     AS(BACKSLASH) 
   &kp COLON  &kp DLLR  &kp PRCNT &kp CARET  &kp PLUS           AS(APOS)   AS(LBKT)    AS(RBKT)     AS(MINUS)     &kp SEMICOLON 
-  &KP TILDE  &kp EXCL  &kp AT    &kp HASH   &kp PIPE           &none   AS(GRAVE)      &kp COMMA    &kp DOT       &kp SLASH 
+  &kp TILDE  &kp EXCL  &kp AT    &kp HASH   &kp PIPE           &none   AS(GRAVE)      &kp COMMA    &kp DOT       &kp SLASH 
                        &none     &none      &none              &none   &none          &none
             >;
         };
