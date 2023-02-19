@@ -199,7 +199,7 @@
             label = "BASE";
             bindings = <
   &kp Q            &kp W           &kp E         &kp R            &kp T              &kp Y           &kp U           &kp I           &kp O               &kp P
-  &hml LEFT_GUI A            &hml LALT S     &hml LCTRL D  &hml LSHIFT F     &hml LEFT_GUI G    &hmr RGUI H     &hmr RSHIFT J    &hmr RCTRL K    &hmr RALT L         &kp COLON
+  &hml LEFT_GUI A            &hml LALT S     &hml LCTRL D  &hml LSHIFT F     &hml LEFT_GUI G    &hmr RGUI H     &hmr RSHIFT J    &hmr RCTRL K    &hmr RALT L         &hmr RIGHT_GUI COLON
   &hml LG(Z) Z     &hml LG(X) X    &hml LG(C) C  &hml LG(V) V     &kp B              &kp N           &kp M           &kp COMMA       &kp DOT             &kp SLASH
                                    &sk LSHIFT    &spacetab        &mo_kp NAV ESC     &mo_kp SYM BACKSPACE   &mo_kp NUM ENTER       &mo_kp FUN DEL
             >;
@@ -228,7 +228,7 @@
         nav_layer {
             label = "NAV";
             bindings = <
-  &none         &none       &none       &none       &none       &caps_word  &kp PAGE_DOWN  &kp PAGE_UP      &none       &none
+  &none         &none       &none       &none       &kp PSCR       &caps_word  &kp PAGE_DOWN  &kp PAGE_UP      &none       &none
   &kp LEFT_GUI  &kp LALT    &kp LCTRL   &none       &none       &kp LEFT    &kp DOWN       &kp UP           &kp RIGHT   &none 
   &none         &none       &none       &none       &none       &none       &kp END        &kp HOME         &none       &none
                             &none       &none       &mo 3       &trans      &none               &none
