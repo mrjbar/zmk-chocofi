@@ -210,8 +210,8 @@
             label = "SYM";
             bindings = <
   &kp LBRC   &kp AMPS  &kp STAR  &kp LPAR   &kp RBRC           &none   &kp LPAR       &kp RPAR     AS(EQUAL)     AS(BACKSLASH) 
-  &kp APOS  &kp DLLR  &kp PRCNT &kp CARET  &kp PLUS           AS(APOS)   AS(LBKT)    AS(RBKT)     AS(MINUS)     &kp SEMICOLON 
-  &kp TILDE  &kp EXCL  &kp AT    &kp HASH   &kp PIPE           &none   AS(GRAVE)      &kp COMMA    &kp DOT       &kp SLASH 
+  &kp APOS  &kp DLLR  &kp PRCNT &kp CARET  &kp PLUS            AS(APOS)   AS(LBKT)    AS(RBKT)     AS(MINUS)     &kp SEMICOLON 
+  &kp TILDE  &kp EXCL  &kp AT    &kp HASH   &kp BACKSLASH      &none   AS(GRAVE)      &kp COMMA    &kp DOT       &kp SLASH 
                        &kp LPAR  &kp RPAR   &kp UNDER          &none   &none          &none
             >;
         };
@@ -221,7 +221,7 @@
             bindings = <
   &kp LBKT        &kp N7     &kp N8     &kp N9     &kp RBKT             &none   &none       &none         &none        &none 
   &kp DQT         &kp N4     &kp N5     &kp N6     &kp EQUAL            &none   &none       &kp RCTRL     &kp RALT     &kp RIGHT_GUI
-  &kp GRAVE       &kp N1     &kp N2     &kp N3     &kp BACKSLASH        &none   &none       &none         &none        &none 
+  &kp GRAVE       &kp N1     &kp N2     &kp N3     &kp PIPE            &none   &none       &none         &none        &none 
                   &none    &kp N0     &kp MINUS                         &none   &none       &none
             >;
         };
