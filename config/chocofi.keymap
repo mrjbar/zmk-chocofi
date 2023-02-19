@@ -50,7 +50,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <300>;// <---[[produces tap if held longer than tapping-term-ms]]
-            quick-tap-ms = <150>;
+            quick-tap-ms = <200>;
             bindings =
                 <&kp>,
                 <&kp>;
@@ -63,7 +63,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <300>;// <---[[produces tap if held longer than tapping-term-ms]]
-            quick-tap-ms = <150>;
+            quick-tap-ms = <200>;
             bindings =
                 <&kp>,
                 <&kp>;
@@ -75,8 +75,8 @@
             label = "mo_kp";
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
+            tapping-term-ms = <300>;
+            quick-tap-ms = <200>;
             bindings = <&mo>, <&kp>;
         };
         as: auto_shift {
