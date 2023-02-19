@@ -50,7 +50,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <300>;// <---[[produces tap if held longer than tapping-term-ms]]
-            quick-tap-ms = <0>;
+            quick-tap-ms = <150>;
             bindings =
                 <&kp>,
                 <&kp>;
@@ -63,7 +63,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <300>;// <---[[produces tap if held longer than tapping-term-ms]]
-            quick-tap-ms = <0>;
+            quick-tap-ms = <150>;
             bindings =
                 <&kp>,
                 <&kp>;
@@ -76,6 +76,7 @@
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
             bindings = <&mo>, <&kp>;
         };
         as: auto_shift {
@@ -228,7 +229,7 @@
         nav_layer {
             label = "NAV";
             bindings = <
-  &none         &none       &none       &none       &kp PSCR       &caps_word  &kp PAGE_DOWN  &kp PAGE_UP      &none       &none
+  &none         &none       none       none         &kp PRINTSCREEN         &caps_word     &kp PAGE_DOWN    &kp PAGE_UP      &none       &none
   &kp LEFT_GUI  &kp LALT    &kp LCTRL   &none       &none       &kp LEFT    &kp DOWN       &kp UP           &kp RIGHT   &none 
   &none         &none       &none       &none       &none       &none       &kp END        &kp HOME         &none       &none
                             &none       &none       &mo 3       &trans      &none               &none
