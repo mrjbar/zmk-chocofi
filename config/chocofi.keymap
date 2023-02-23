@@ -158,8 +158,8 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press &kp LG(SPACE)>,
-                <&macro_wait_time 500>,
-                <&macro_tap &kp O &kp U &kp T &kp L &kp O &kp O &kp K>,
+                <&macro_wait_time 100>,
+                <&macro_tap &kp O &kp U &kp T &kp L &kp O &kp O &kp K &kp DOT &kp A &kp P &kp P &kp ENTER>,
                 <&macro_release &kp LG(SPACE)>;
         };
         nav_slack: nav_slack {
@@ -168,8 +168,8 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press &kp LG(SPACE)>,
-                <&macro_wait_time 500>,
-                <&macro_tap &kp S &kp L &kp A &kp C &kp K>,
+                <&macro_wait_time 100>,
+                <&macro_tap &kp S &kp L &kp A &kp C &kp K &kp DOT &kp A &kp P &kp P &kp ENTER>,
                 <&macro_release &kp LG(SPACE)>;
         };
         nav_iterm: nav_iterm {
@@ -178,8 +178,8 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press &kp LG(SPACE)>,
-                <&macro_wait_time 500>,
-                <&macro_tap &kp I &kp T &kp E &kp R &kp M>,
+                <&macro_wait_time 100>,
+                <&macro_tap &kp I &kp T &kp E &kp R &kp M &kp DOT &kp A &kp P &kp P &kp ENTER>,
                 <&macro_release &kp LG(SPACE)>;
         };
         nav_firefox: nav_firefox {
@@ -188,8 +188,8 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press &kp LG(SPACE)>,
-                <&macro_wait_time 500>,
-                <&macro_tap &kp F &kp I &kp R &kp E &kp F &kp O &kp X>,
+                <&macro_wait_time 100>,
+                <&macro_tap &kp F &kp I &kp R &kp E &kp F &kp O &kp X &kp DOT &kp A &kp P &kp P &kp ENTER>,
                 <&macro_release &kp LG(SPACE)>;
         };
         find_file: find_file {
