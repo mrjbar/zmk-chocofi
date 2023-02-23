@@ -152,6 +152,17 @@
     // macros
 
     macros {
+        nav_outlook: nav_outlook {
+            label = "NAV_OUTLOOK";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &kp LGUI>,
+                <&macro_tap &kp SPACE>,
+                <&macro_wait_time 500>,
+                <&macro_tap &kp O &kp U &kp T &kp L &kp O &kp O &kp K>,
+                <&macro_release &kp LGUI>;
+        };
         nav_slack: nav_slack {
             label = "NAV_SLACK";
             compatible = "zmk,behavior-macro";
@@ -161,6 +172,28 @@
                 <&macro_tap &kp SPACE>,
                 <&macro_wait_time 500>,
                 <&macro_tap &kp S &kp L &kp A &kp C &kp K>,
+                <&macro_release &kp LGUI>;
+        };
+        nav_iterm: nav_iterm {
+            label = "NAV_ITERM";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &kp LGUI>,
+                <&macro_tap &kp SPACE>,
+                <&macro_wait_time 500>,
+                <&macro_tap &kp I &kp T &kp E &kp R &kp M>,
+                <&macro_release &kp LGUI>;
+        };
+        nav_firefox: nav_firefox {
+            label = "NAV_FIREFOX";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &kp LGUI>,
+                <&macro_tap &kp SPACE>,
+                <&macro_wait_time 500>,
+                <&macro_tap &kp F &kp I &kp R &kp E &kp F &kp O &kp X>,
                 <&macro_release &kp LGUI>;
         };
         find_file: find_file {
@@ -243,7 +276,7 @@
             label = "NAV";
             bindings = <
   &none         &kp LC(N1)  &kp LC(N2)  &kp LC(N3)  &kp LG(LS(N4))         &caps_word     &kp PAGE_DOWN    &kp PAGE_UP      &none       &none
-  &kp LEFT_GUI  &kp LALT    &kp LCTRL   &none       &kp LG(LS(LC(N4)))       &kp LEFT    &kp DOWN       &kp UP           &kp RIGHT   &none 
+  &nav_outlook  &nav_slack    &nav_iterm   &nav_firefox       &kp LG(LS(LC(N4)))       &kp LEFT    &kp DOWN       &kp UP           &kp RIGHT   &none 
   &none         &none       &buffered_file       &grep_file       &find_file       &none       &kp END        &kp HOME         &none       &none
                             &none       &none       &mo 3       &trans      &none               &none
             >;
