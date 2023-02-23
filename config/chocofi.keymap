@@ -159,9 +159,9 @@
             wait-ms = <100>;
             bindings =
                 <&macro_press &kp LG(SPACE)>,
-                <&macro_wait_time 100>,
-                <&macro_tap &kp O &kp U &kp T &kp L &kp O &kp O &kp K &kp DOT &kp A &kp P &kp P &kp ENTER>,
-                <&macro_release &kp LG(SPACE)>;
+                <&macro_pause_for_release>,
+                <&macro_release &kp LG(SPACE)>,
+                <&macro_tap &kp O &kp U &kp T &kp L &kp O &kp O &kp K &kp DOT &kp A &kp P &kp P &kp ENTER>;
         };
         nav_slack: nav_slack {
             label = "NAV_SLACK";
