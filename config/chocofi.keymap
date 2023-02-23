@@ -229,8 +229,8 @@
         nav_layer {
             label = "NAV";
             bindings = <
-  &none         &none       &none       &none         &kp PRINTSCREEN         &caps_word     &kp PAGE_DOWN    &kp PAGE_UP      &none       &none
-  &kp LEFT_GUI  &kp LALT    &kp LCTRL   &none       &none       &kp LEFT    &kp DOWN       &kp UP           &kp RIGHT   &none 
+  &none         &kp LC(N1)  &kp LC(N2)  &kp LC(N3)  &kp LG(LS(N4))         &caps_word     &kp PAGE_DOWN    &kp PAGE_UP      &none       &none
+  &kp LEFT_GUI  &kp LALT    &kp LCTRL   &none       &kp LG(LS(LC(N4)))       &kp LEFT    &kp DOWN       &kp UP           &kp RIGHT   &none 
   &none         &none       &none       &none       &none       &none       &kp END        &kp HOME         &none       &none
                             &none       &none       &mo 3       &trans      &none               &none
             >;
