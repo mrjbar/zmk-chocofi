@@ -167,7 +167,7 @@
             bindings =
                 <&macro_tap &kp LG(SPACE)>,
                 <&macro_wait_time 100>,
-                <&macro_tap &kp S &kp L &kp A &kp C &kp K &kp DOT &kp A &kp P &kp P &kp ENTER>,
+                <&macro_tap &kp S &kp L &kp A &kp C &kp K &kp DOT &kp A &kp P &kp P &kp ENTER>;
         };
         nav_iterm: nav_iterm {
             label = "NAV_ITERM";
@@ -177,7 +177,7 @@
                 <&macro_tap &kp LG(SPACE)>,
                 <&macro_wait_time 200>,
                 <&macro_tap &kp I &kp T &kp E &kp R &kp M &kp DOT &kp A &kp P &kp P>,
-                <&macro_tap &kp ENTER>,
+                <&macro_tap &kp ENTER>;
         };
         nav_firefox: nav_firefox {
             label = "NAV_FIREFOX";
@@ -186,7 +186,7 @@
             bindings =
                 <&macro_tap &kp LG(SPACE)>,
                 <&macro_tap &kp F &kp I &kp R &kp E &kp F &kp O &kp X &kp DOT &kp A &kp P &kp P>,
-                <&macro_tap &kp ENTER>,
+                <&macro_tap &kp ENTER>;
         };
         find_file: find_file {
             label = "FUZZY_FIND_FILE";
