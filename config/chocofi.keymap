@@ -156,26 +156,32 @@
             label = "NAV_OUTLOOK";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
             bindings =
                 <&macro_tap &kp LG(SPACE)>,
-                <&macro_tap &kp O &kp U &kp T &kp L &kp O &kp O &kp K &kp DOT &kp A &kp P &kp P &kp ENTER>;
+                <&macro_tap &kp O &kp U &kp T &kp L &kp O &kp O &kp K &kp DOT &kp A &kp P &kp P>;
+                <&macro_tap &kp ENTER>;
         };
         nav_slack: nav_slack {
             label = "NAV_SLACK";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
             bindings =
                 <&macro_tap &kp LG(SPACE)>,
-                <&macro_wait_time 100>,
-                <&macro_tap &kp S &kp L &kp A &kp C &kp K &kp DOT &kp A &kp P &kp P &kp ENTER>;
+                <&macro_tap &kp S &kp L &kp A &kp C &kp K &kp DOT &kp A &kp P &kp P>;
+                <&macro_tap &kp ENTER>;
         };
         nav_iterm: nav_iterm {
             label = "NAV_ITERM";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
             bindings =
                 <&macro_tap &kp LG(SPACE)>,
-                <&macro_wait_time 200>,
                 <&macro_tap &kp I &kp T &kp E &kp R &kp M &kp DOT &kp A &kp P &kp P>,
                 <&macro_tap &kp ENTER>;
         };
@@ -183,9 +189,22 @@
             label = "NAV_FIREFOX";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
             bindings =
                 <&macro_tap &kp LG(SPACE)>,
                 <&macro_tap &kp F &kp I &kp R &kp E &kp F &kp O &kp X &kp DOT &kp A &kp P &kp P>,
+                <&macro_tap &kp ENTER>;
+        };
+        nav_lens: nav_lens {
+            label = "NAV_LENS";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_tap &kp LG(SPACE)>,
+                <&macro_tap &kp L &kp E &kp N &kp S>,
                 <&macro_tap &kp ENTER>;
         };
         find_file: find_file {
