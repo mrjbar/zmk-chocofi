@@ -160,7 +160,7 @@
             tap-ms = <40>;
             bindings =
                 <&macro_tap &kp LG(SPACE)>,
-                <&macro_tap &kp O &kp U &kp T &kp L &kp O &kp O &kp K &kp DOT &kp A &kp P &kp P>;
+                <&macro_tap &kp O &kp U &kp T &kp L &kp O &kp O &kp K &kp DOT &kp A &kp P &kp P>,
                 <&macro_tap &kp ENTER>;
         };
         nav_slack: nav_slack {
@@ -171,7 +171,7 @@
             tap-ms = <40>;
             bindings =
                 <&macro_tap &kp LG(SPACE)>,
-                <&macro_tap &kp S &kp L &kp A &kp C &kp K &kp DOT &kp A &kp P &kp P>;
+                <&macro_tap &kp S &kp L &kp A &kp C &kp K &kp DOT &kp A &kp P &kp P>,
                 <&macro_tap &kp ENTER>;
         };
         nav_iterm: nav_iterm {
