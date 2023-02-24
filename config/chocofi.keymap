@@ -149,15 +149,15 @@
         };
     };
 
-    // macros
+    // macros https://zmk.dev/docs/behaviors/macros
 
     macros {
         nav_outlook: nav_outlook {
             label = "NAV_OUTLOOK";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
+            wait-ms = <30>;
+            tap-ms = <30>;
             bindings =
                 <&macro_tap &kp LG(SPACE)>,
                 <&macro_tap &kp O &kp U &kp T &kp L &kp O &kp O &kp K &kp DOT &kp A &kp P &kp P>,
@@ -167,8 +167,8 @@
             label = "NAV_SLACK";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
+            wait-ms = <30>;
+            tap-ms = <30>;
             bindings =
                 <&macro_tap &kp LG(SPACE)>,
                 <&macro_tap &kp S &kp L &kp A &kp C &kp K &kp DOT &kp A &kp P &kp P>,
@@ -178,8 +178,8 @@
             label = "NAV_ITERM";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
+            wait-ms = <30>;
+            tap-ms = <30>;
             bindings =
                 <&macro_tap &kp LG(SPACE)>,
                 <&macro_tap &kp I &kp T &kp E &kp R &kp M &kp DOT &kp A &kp P &kp P>,
@@ -189,8 +189,8 @@
             label = "NAV_FIREFOX";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
+            wait-ms = <30>;
+            tap-ms = <30>;
             bindings =
                 <&macro_tap &kp LG(SPACE)>,
                 <&macro_tap &kp F &kp I &kp R &kp E &kp F &kp O &kp X &kp DOT &kp A &kp P &kp P>,
@@ -200,8 +200,8 @@
             label = "NAV_LENS";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
+            wait-ms = <30>;
+            tap-ms = <30>;
             bindings =
                 <&macro_tap &kp LG(SPACE)>,
                 <&macro_tap &kp L &kp E &kp N &kp S>,
@@ -227,7 +227,7 @@
         };
     };
 
-    // combos for accents dead keys (for US_intl_altgr_deadkeys OS layout)
+    // combos https://zmk.dev/docs/features/combos
 
     combos {
         compatible = "zmk,combos";
