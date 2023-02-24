@@ -232,11 +232,6 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_quote {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <18 19>;
-        };
-
         combo_grv {
             timeout-ms = <50>;
             key-positions = <2 3>;
@@ -248,6 +243,22 @@
             bindings = <&kp LC(BACKSPACE)>;
             key-positions = <8 9>;
         };
+
+        combo_shift {
+            bindings = <&kp RSHIFT>;
+            key-positions = <16 17>;
+        };
+
+        combo_ctrl {
+            bindings = <&kp RSHIFT>;
+            key-positions = <17 18>;
+        };
+
+        combo_quote {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <18 19>;
+        };
+
     };
 
     keymap {
