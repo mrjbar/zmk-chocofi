@@ -232,8 +232,8 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_esc {
-            bindings = <&kp ESC>;
+        combo_tilde {
+            bindings = <&kp TILDE>;
             key-positions = <0 1>;
         };
 
@@ -247,11 +247,6 @@
             key-positions = <11 12>;
         };
 
-        combo_delwrd {
-            bindings = <&kp LC(BACKSPACE)>;
-            key-positions = <8 9>;
-        };
-
         combo_rshift {
             bindings = <&kp RSHIFT>;
             key-positions = <16 17>;
@@ -260,6 +255,11 @@
         combo_rctrl {
             bindings = <&kp RCTRL>;
             key-positions = <17 18>;
+        };
+
+        combo_apos {
+            bindings = <&kp APOS>;
+            key-positions = <8 9>;
         };
 
         combo_quote {
