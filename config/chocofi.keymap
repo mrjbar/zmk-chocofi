@@ -232,8 +232,8 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_tilde {
-            bindings = <&kp TILDE>;
+        combo_grave {
+            bindings = <&kp GRAVE>;
             key-positions = <0 1>;
         };
 
