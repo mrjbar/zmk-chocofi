@@ -248,7 +248,7 @@
         };
 
         combo_rshift {
-            bindings = <&kp RSHIFT>;
+            bindings = <&caps_word>;
             key-positions = <16 17>;
         };
 
