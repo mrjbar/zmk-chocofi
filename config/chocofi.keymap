@@ -5,6 +5,7 @@
 #define BASE 0
 #define SYM  1
 #define NUM  2
+#define NAV  3
 #define ADJ  5// macros definition
 #define undo LC(Z)
 #define redo LC(LS(Z))
