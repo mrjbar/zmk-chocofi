@@ -276,7 +276,7 @@
   &kp Q            &kp W     &kp E     &kp R     &kp T              &kp Y     &kp U    &kp I    &kp O        &kp P
   &hml LEFT_GUI A  &kp S     &kp D     &kp F     &kp G              &kp H     &kp J    &kp K    &kp L  &hmr RIGHT_GUI COLON
   &hml LSHIFT Z     &hml LG(X) X    &hml LG(C) C  &hml LG(V) V     &kp B              &kp N           &kp M           &kp COMMA       &kp DOT             &hmr RSHIFT SLASH
-                                   &kp TAB    &kp SPACE        &mo_kp NAV ESC     &mo_kp SYM BACKSPACE   &mo_kp NUM ENTER       &mo_kp FUN DEL
+                                   &kp TAB    &kp SPACE        &mo_kp NAV ESC     &mo_kp SYM BACKSPACE   &mo_kp NUM ENTER       &kp DEL
             >;
         };
 
@@ -286,7 +286,7 @@
    &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR
    &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH
    &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE
-                    &kp LGUI &trans     &kp SPACE &kp RET   &trans          &kp RALT
+                    &kp LGUI &UNDERSCORE     &kp MINUS &kp RET   &trans          &kp RALT
             >;
         };
 
@@ -296,7 +296,7 @@
    &kp F1       &kp F2       &kp F3       &kp F4       &kp F5         &kp F6   &kp F7   &kp F8   &kp F9    &kp F10
    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8   &kp N9    &kp N0
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3     &bt BT_SEL 4   &trans   &trans   &trans    &trans
-                           &kp LGUI     &trans       &kp SPACE        &kp RET  &trans   &kp RALT
+                           &kp LGUI     &kp UNDERSCORE       &kp MINUS        &kp RET  &trans   &kp RALT
             >;
         };
 
