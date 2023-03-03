@@ -3,10 +3,8 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define BASE 0
-#define SYM  1
-#define NUM  2
-#define NAV  3
-#define FUN  4
+#define LOWER  1
+#define RAISE  2
 #define ADJ  5// macros definition
 #define undo LC(Z)
 #define redo LC(LS(Z))
@@ -36,7 +34,7 @@
         compatible = "zmk,conditional-layers";
 
         tri_layer {
-            if-layers = <NAV FUN>;
+            if-layers = <RAISE LOWER>;
             then-layer = <ADJ>;
         };
     };
@@ -153,7 +151,7 @@
 
     macros {
         nav_outlook: nav_outlook {
-            label = "NAV_OUTLOOK";
+            label = "RAISE_OUTLOOK";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <30>;
@@ -164,7 +162,7 @@
                 <&macro_tap &kp ENTER>;
         };
         nav_slack: nav_slack {
-            label = "NAV_SLACK";
+            label = "RAISE_SLACK";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <30>;
@@ -175,7 +173,7 @@
                 <&macro_tap &kp ENTER>;
         };
         nav_iterm: nav_iterm {
-            label = "NAV_ITERM";
+            label = "RAISE_ITERM";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <30>;
@@ -186,7 +184,7 @@
                 <&macro_tap &kp ENTER>;
         };
         nav_firefox: nav_firefox {
-            label = "NAV_FIREFOX";
+            label = "RAISE_FIREFOX";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <30>;
@@ -197,7 +195,7 @@
                 <&macro_tap &kp ENTER>;
         };
         nav_lens: nav_lens {
-            label = "NAV_LENS";
+            label = "RAISE_LENS";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <30>;
@@ -278,47 +276,27 @@
   &kp Q            &kp W     &kp E     &kp R     &kp T              &kp Y     &kp U    &kp I    &kp O        &kp P
   &hml LEFT_GUI A  &kp S     &kp D     &kp F     &kp G              &kp H     &kp J    &kp K    &kp L  &hmr RIGHT_GUI COLON
   &hml LSHIFT Z     &hml LG(X) X    &hml LG(C) C  &hml LG(V) V     &kp B              &kp N           &kp M           &kp COMMA       &kp DOT             &hmr RSHIFT SLASH
-                                   &kp TAB    &kp SPACE        &mo_kp NAV ESC     &mo_kp SYM BACKSPACE   &mo_kp NUM ENTER       &mo_kp FUN DEL
+                                   &kp TAB    &kp SPACE        &mo_kp RAISE ESC     &lt LOWER BACKSPACE   &kp ENTER       &mo_kp DEL
             >;
         };
 
-        sym_layer {
-            label = "SYM";
+        lower_layer {
+            label = "LOWER";
             bindings = <
-  &none     &kp AMPS  &kp STAR  &kp LPAR   &kp EQUAL     &none   &kp LPAR    &kp RPAR  &none    &none 
-  &kp SEMI  &kp DLLR  &kp PRCNT &kp CARET  &kp PIPE      &none   &kp LBKT    &kp RBKT  &none    &none
-  &none     &kp EXCL  &kp AT    &kp HASH   &kp BSLH      &none   &kp LBRC    &kp RBRC  &none    &none 
-                   &kp PLUS  &kp MINUS  &kp UNDER     &none   &none       &none
+  &kp TILDE   &kp N7     &kp N8     &kp N9     &kp EQUAL     C_VOL_UP   &kp LPAR    &kp RPAR  &none    &kp PIPE 
+  &none       &kp N4     &kp N5     &kp N6     &kp MINUS     C_VOL_DN   &kp LBKT    &kp RBKT  &none    &kp SEMI
+  &none       &kp N1     &kp N2     &kp N3     &kp PLUS      C_MUTE     &kp LBRC    &kp RBRC  &none    &kp BSLH 
+                  &none  &kp LSHIFT  &kp N0                   &none   &none       &none
             >;
         };
 
-        num_layer {
-            label = "NUM";
+        raise_layer {
+            label = "RAISE";
             bindings = <
-  &none       &kp N7     &kp N8     &kp N9     &none            &none   &none       &none         &none        &none 
-  &none       &kp N4     &kp N5     &kp N6     &none            &none   &none       &kp RCTRL     &kp RALT     &kp RIGHT_GUI
-  &none       &kp N1     &kp N2     &kp N3     &none            &none   &none       &none         &none        &none 
-                  &none  &kp MINUS  &kp N0                      &none   &none       &none
-            >;
-        };
-
-        nav_layer {
-            label = "NAV";
-            bindings = <
-  &none         &kp LC(N1)      &kp LC(N2)      &kp LC(N3)          &kp LG(LS(LC(N4)))          &caps_word     &kp PAGE_DOWN    &kp PAGE_UP      &none       &none
-  &nav_outlook  &nav_slack      &nav_iterm      &nav_firefox        &nav_lens                   &kp LEFT       &kp DOWN         &kp UP           &kp RIGHT   &none 
-  &none         &buffered_file  &grep_file      &find_file          &kp LG(LS(N4))                  &none          &kp END          &kp HOME         &none       &none
-                            &none       &none       &mo 3       &trans      &none               &none
-            >;
-        };
-
-        fun_layer {
-            label = "FUN";
-            bindings = <
-  &kp F12  &kp F7  &kp F8  &kp F9  &kp C_VOL_UP                  &bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3    &bt BT_SEL 4
-  &kp F11  &kp F4  &kp F5  &kp F6  &kp C_VOL_DN                  &bt BT_CLR      &none          &none          &none           &none 
-  &kp F10  &kp F1  &kp F2  &kp F3  &kp C_MUTE                    &none           &none          &none          &none           &none
-           &kp C_PREVIOUS  &kp C_PLAY_PAUSE   &kp C_NEXT         &trans          &none          &none
+  &none         &kp LC(N1)      &kp LC(N2)      &kp LC(N3)          &kp LG(LS(LC(N4)))          &kp F1         &kp F2           &kp F3          &kp F4      &kp F5
+  &nav_outlook  &nav_slack      &nav_iterm      &nav_firefox        &nav_lens                   &kp LEFT       &kp DOWN         &kp UP          &kp RIGHT   &kp RIGHT_GUI 
+  &none         &buffered_file  &grep_file      &find_file          &kp LG(LS(N4))              &kp F6         &kp F7           &kp F8          &kp F9      &F10
+                                &none           &none               &trans                      &bt BT_PRV     &bt BT_NXT       &bt BT_CLR
             >;
         };
     };
