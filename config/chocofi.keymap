@@ -283,10 +283,10 @@
         lower_layer {
             label = "LOWER";
             bindings = <
-  &kp TILDE   &kp N7     &kp N8     &kp N9     &kp EQUAL     &kp C_VOL_UP   &kp LPAR    &kp RPAR  &none    &kp PIPE 
-  &none       &kp N4     &kp N5     &kp N6     &kp MINUS     &kp C_VOL_DN   &kp LBKT    &kp RBKT  &none    &kp SEMI
-  &none       &kp N1     &kp N2     &kp N3     &kp PLUS      &kp C_MUTE     &kp LBRC    &kp RBRC  &none    &kp BSLH 
-                  &none  &kp LSHIFT  &kp N0                   &none   &none       &none
+  &kp TILDE   &kp N7     &kp N8     &kp N9     &kp EQUAL     &kp C_VOL_UP   &kp LPAR    &kp RPAR  &none     &kp PIPE 
+  &kp MINUS   &kp N4     &kp N5     &kp N6     &kp MINUS     &kp C_VOL_DN   &kp LBKT    &kp RBKT  &kp MINUS &kp SEMI
+  &none       &kp N1     &kp N2     &kp N3     &kp PLUS      &kp C_MUTE     &kp LBRC    &kp RBRC  &none     &kp BSLH 
+              &none      &kp N0     &kp LSHIFT               &none          &none       &none
             >;
         };
 
