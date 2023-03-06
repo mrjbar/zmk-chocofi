@@ -5,7 +5,7 @@
 #define BASE 0
 #define LOWER  1
 #define RAISE  2
-#define ADJ  5// macros definition
+#define ADJ  3// macros definition
 #define undo LC(Z)
 #define redo LC(LS(Z))
 #define prev_screen LC(LG(LEFT))
