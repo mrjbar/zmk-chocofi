@@ -299,5 +299,15 @@
                                 &none           &none               &trans                      &bt BT_PRV     &bt BT_NXT       &bt BT_CLR
             >;
         };
+
+        adj_layer {
+            label = "ADJ";
+            bindings = <
+  &none  &none  &none  &none  &none      &none     &none     &none          &none      &none
+  &none  &none  &none  &none  &none      &none     &none     &none          &none      &none
+  &none  &none  &none  &none  &none      &none     &none     &none          &none      &none
+                &none  &none  &none      &none      &none    &none
+            >;
+        };
     };
 };
