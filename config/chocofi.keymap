@@ -9,7 +9,7 @@
 #define undo LC(Z)
 #define redo LC(LS(Z))
 #define cycle_layout LA(LS(SPACE))
-#define move_focus LA(LS(k))
+#define move_focus LA(LS(K))
 #define meh LC(LS(LALT))
 #define prev_win LA(TAB)
 #define next_win LA(LS(TAB))
