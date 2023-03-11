@@ -267,10 +267,10 @@
         lower_layer {
             label = "LOWER";
             bindings = <
-  &kp TILDE   &kp N7     &kp N8     &kp N9     &kp EQUAL     &kp C_VOL_UP   &kp LPAR    &kp RPAR  &none     &kp PIPE 
-  &kp TAB     &kp N4     &kp N5     &kp N6     &kp MINUS     &kp C_VOL_DN   &kp LBRC    &kp RBRC  &kp MINUS &kp SEMI
-  &none       &kp N1     &kp N2     &kp N3     &kp PLUS      &kp C_MUTE     &kp LBKT    &kp RBKT  &trans     &kp BSLH 
-              &trans     &kp N0     &kp LSHIFT               &none          &none       &none
+  &kp TILDE   &kp N7     &kp N8     &kp N9     &kp EQUAL     &kp C_VOL_UP   &kp LPAR    &kp RPAR  &kp RSHIFT    &kp PIPE 
+  &kp TAB     &kp N4     &kp N5     &kp N6     &kp MINUS     &kp C_VOL_DN   &kp LBRC    &kp RBRC  &kp MINUS     &kp SEMI
+  &none       &kp N1     &kp N2     &kp N3     &kp PLUS      &kp C_MUTE     &kp LBKT    &kp RBKT  &trans        &kp BSLH 
+              &trans     &kp N0     &trans                   &none          &kp RSHIFT  &none
             >;
         };
 
@@ -280,17 +280,17 @@
   &kp cycle_layout         &kp LC(N1)      &kp LC(N2)      &kp LC(N3)          &kp LG(LS(LC(N4)))          &kp F1         &kp F2           &kp F3          &kp F4      &kp F5
   &nav_outlook  &nav_slack      &nav_iterm      &nav_firefox        &nav_lens                   &kp LEFT       &kp DOWN         &kp UP          &kp RIGHT   &kp RIGHT_GUI 
   &kp move_focus         &buffered_file  &grep_file      &find_file          &kp LG(LS(N4))              &kp F6         &kp F7           &kp F8          &kp F9      &kp F10
-                                &none           &none               &trans                      &bt BT_PRV     &bt BT_NXT       &bt BT_CLR
+                                &none           &none               &trans          &none          &none          &none                                  
             >;
         };
 
         adj_layer {
             label = "ADJ";
             bindings = <
-  &none  &none  &none  &kp C_REWIND  &kp C_FAST_FORWARD      &kp C_REPEAT     &none     &none          &none      &none
-  &none  &none  &kp C_PREV  &kp C_NEXT   &kp C_PLAY_PAUSE      &none     &kp C_VOL_DN     &kp C_VOL_UP          &kp C_MUTE      &none
-  &none  &none  &none  &none  &none      &none     &none     &none          &none      &none
-                &none  &none  &none      &none      &none    &none
+  &none  &none  &kp C_REWIND  &kp C_FAST_FORWARD  &kp C_REPEAT           &none     &bt BT_PRV     &bt BT_NXT     &bt BT_CLR   &none
+  &none  &none  &kp C_PREV  &kp C_NEXT   &kp C_PLAY_PAUSE                &none     &kp C_VOL_DN   &kp C_VOL_UP   &kp C_MUTE   &none
+  &none  &none  &none  &none  &none                                      &none     &none          &none          &none        &none
+                &none  &none  &none                                      &none     &none          &none
             >;
         };
     };
