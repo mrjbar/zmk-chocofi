@@ -268,7 +268,7 @@
             label = "LOWER";
             bindings = <
   &kp TILDE   &kp N7     &kp N8     &kp N9     &kp EQUAL     &none         &kp LPAR    &kp RPAR  &kp RSHIFT    &kp PIPE 
-  &kp TAB     &kp N4     &kp N5     &kp N6     &kp MINUS     &kp RSHIFT    &kp LBRC    &kp RBRC  &kp MINUS     &kp SEMI
+  &kp TAB     &kp N4     &kp N5     &kp N6     &kp MINUS     &kp RSHIFT    &kp LBRC    &kp RBRC  &kp RSHIFT    &kp SEMI
   &none       &kp N1     &kp N2     &kp N3     &kp PLUS      &kp RSHIFT    &kp LBKT    &kp RBKT  &trans        &kp BSLH 
               &trans     &kp N0     &trans                   &none          &none       &none
             >;
