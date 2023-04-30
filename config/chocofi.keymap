@@ -10,9 +10,11 @@
 #define redo LC(LS(Z))
 #define cycle_layout LA(LS(SPACE))
 #define move_focus LA(LS(K))
-#define meh LC(LS(LALT))
-#define prev_win LA(TAB)
-#define next_win LA(LS(TAB))
+#define WS1 &kp LC(N1)
+#define WS2 &kp LC(N2)
+#define WS3 &kp LC(N3)
+#define SS1 &kp LG(LS(LC(N4)))
+#define SS2 &kp LG(LS(N4))
 #define deg RA(LS(SEMI))// tune mod tap
 #define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
 
@@ -149,61 +151,6 @@
     // macros https://zmk.dev/docs/behaviors/macros
 
     macros {
-        nav_outlook: nav_outlook {
-            label = "RAISE_OUTLOOK";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
-            bindings =
-                <&macro_tap &kp LG(SPACE)>,
-                <&macro_tap &kp O &kp U &kp T &kp L &kp O &kp O &kp K &kp DOT &kp A &kp P &kp P>,
-                <&macro_tap &kp ENTER>;
-        };
-        nav_slack: nav_slack {
-            label = "RAISE_SLACK";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
-            bindings =
-                <&macro_tap &kp LG(SPACE)>,
-                <&macro_tap &kp S &kp L &kp A &kp C &kp K &kp DOT &kp A &kp P &kp P>,
-                <&macro_tap &kp ENTER>;
-        };
-        nav_iterm: nav_iterm {
-            label = "RAISE_ITERM";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
-            bindings =
-                <&macro_tap &kp LG(SPACE)>,
-                <&macro_tap &kp I &kp T &kp E &kp R &kp M &kp DOT &kp A &kp P &kp P>,
-                <&macro_tap &kp ENTER>;
-        };
-        nav_firefox: nav_firefox {
-            label = "RAISE_FIREFOX";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
-            bindings =
-                <&macro_tap &kp LG(SPACE)>,
-                <&macro_tap &kp F &kp I &kp R &kp E &kp F &kp O &kp X &kp DOT &kp A &kp P &kp P>,
-                <&macro_tap &kp ENTER>;
-        };
-        nav_lens: nav_lens {
-            label = "RAISE_LENS";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
-            bindings =
-                <&macro_tap &kp LG(SPACE)>,
-                <&macro_tap &kp L &kp E &kp N &kp S>,
-                <&macro_tap &kp ENTER>;
-        };
         find_file: find_file {
             label = "FUZZY_FIND_FILE";
             compatible = "zmk,behavior-macro";
@@ -249,6 +196,35 @@
             key-positions = <18 19>;
         };
 
+        combo_lbkt {
+            bindings = <&kp LBKT>;
+            key-positions = <3 14>;
+        };
+
+        combo_lbrc {
+            bindings = <&kp LBRC>;
+            key-positions = <2 13>;
+        };
+
+        combo_lpar {
+            bindings = <&kp lPAR>;
+            key-positions = <1 12>;
+        };
+
+        combo_rbkt {
+            bindings = <&kp RBKT>;
+            key-positions = <6 16>;
+        };
+
+        combo_rbrc {
+            bindings = <&kp RBRC>;
+            key-positions = <7 17>;
+        };
+
+        combo_rpar {
+            bindings = <&kp RPAR>;
+            key-positions = <8 18>;
+        };
     };
 
     keymap {
@@ -267,20 +243,20 @@
         lower_layer {
             label = "LOWER";
             bindings = <
-  &kp TILDE   &kp N7     &kp N8     &kp N9     &kp EQUAL     &none         &kp LPAR    &kp RPAR  &kp RSHIFT    &kp PIPE 
-  &kp TAB     &kp N4     &kp N5     &kp N6     &kp MINUS     &kp RSHIFT    &kp LBRC    &kp RBRC  &kp RSHIFT    &kp SEMI
-  &none       &kp N1     &kp N2     &kp N3     &kp PLUS      &kp RSHIFT    &kp LBKT    &kp RBKT  &trans        &kp BSLH 
-              &trans     &kp N0     &trans                   &none          &none       &none
+  &kp TILDE   &kp N7     &kp N8     &kp N9     &kp EQUAL     &trans &kp LPAR &kp RPAR &trans &kp PIPE 
+  &kp TAB     &kp N4     &kp N5     &kp N6     &kp MINUS     &trans &kp LBRC &kp RBRC &trans &kp SEMI
+  &trans       &kp N1     &kp N2     &kp N3     &kp PLUS     &trans &kp LBKT &kp RBKT &trans &kp BSLH 
+              &trans     &kp N0     &trans                   &trans &trans   &trans
             >;
         };
 
         raise_layer {
             label = "RAISE";
             bindings = <
-  &kp cycle_layout &kp LC(N1)      &kp LC(N2)      &kp LC(N3)      &kp LG(LS(LC(N4)))          &kp F1         &kp F2     &kp F3          &kp F4      &kp F5
-  &nav_outlook      &nav_slack     &nav_iterm      &nav_firefox    &nav_lens                   &kp LEFT       &kp DOWN   &kp UP          &kp RIGHT   &kp RIGHT_GUI 
-  &kp move_focus   &buffered_file  &grep_file      &find_file      &kp LG(LS(N4))              &kp F6         &kp F7     &kp F8          &kp F9      &kp F10
-                                   &none           &none           &none                       &trans         &none      &none
+  &trans  WS1       WS2       WS3     SS1          &kp F1        &kp F2     &kp F3  &kp F4      &kp F5
+  &trans  &trans    &trans    &trans  SS2          &kp LEFT      &kp DOWN   &kp UP  &kp RIGHT   &kp RIGHT_GUI 
+  &trans  &trans    &trans    &trans  &trans       &kp F6        &kp F7     &kp F8  &kp F9      &kp F10
+                        &none     &none   &none    &trans        &none      &none
             >;
         };
 
