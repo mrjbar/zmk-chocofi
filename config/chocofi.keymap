@@ -198,17 +198,17 @@
 
         combo_lbkt {
             bindings = <&kp LBKT>;
-            key-positions = <3 14>;
+            key-positions = <3 13>;
         };
 
         combo_lbrc {
             bindings = <&kp LBRC>;
-            key-positions = <2 13>;
+            key-positions = <2 12>;
         };
 
         combo_lpar {
-            bindings = <&kp lPAR>;
-            key-positions = <1 12>;
+            bindings = <&kp LPAR>;
+            key-positions = <1 11>;
         };
 
         combo_rbkt {
