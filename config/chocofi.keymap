@@ -225,6 +225,56 @@
             bindings = <&kp RPAR>;
             key-positions = <8 18>;
         };
+
+        combo_excl {
+            bindings = <&kp EXCL>;
+            key-positions = <10 20>;
+        };
+
+        combo_at {
+            bindings = <&kp AT>;
+            key-positions = <11 21>;
+        };
+
+        combo_dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <12 22>;
+        };
+
+        combo_caret {
+            bindings = <&kp CARET>;
+            key-positions = <13 23>;
+        };
+
+        combo_minus {
+            bindings = <&kp MINUS>;
+            key-positions = <14 24>;
+        };
+
+        combo_underscore {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <15 25>;
+        };
+
+        combo_percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <16 26>;
+        };
+
+        combo_star {
+            bindings = <&kp STAR>;
+            key-positions = <17 27>;
+        };
+
+        combo_amps {
+            bindings = <&kp AMPS>;
+            key-positions = <18 28>;
+        };
+
+        combo_hash {
+            bindings = <&kp HASH>;
+            key-positions = <19 29>;
+        };
     };
 
     keymap {
@@ -243,9 +293,9 @@
         lower_layer {
             label = "LOWER";
             bindings = <
-  &kp TILDE   &kp N7     &kp N8     &kp N9     &kp EQUAL     &trans &kp LPAR &kp RPAR &trans &kp PIPE 
-  &kp TAB     &kp N4     &kp N5     &kp N6     &kp MINUS     &trans &kp LBRC &kp RBRC &trans &kp SEMI
-  &trans       &kp N1     &kp N2     &kp N3     &kp PLUS     &trans &kp LBKT &kp RBKT &trans &kp BSLH 
+  &kp TILDE   &kp N7     &kp N8     &kp N9     &kp EQUAL     &trans &trans &trans &trans &kp PIPE 
+  &kp TAB     &kp N4     &kp N5     &kp N6     &kp MINUS     &trans &trans &trans &trans &kp SEMI
+  &trans      &kp N1     &kp N2     &kp N3     &kp PLUS      &trans &trans &trans &trans &kp BSLH 
               &trans     &kp N0     &trans                   &trans &trans   &trans
             >;
         };
