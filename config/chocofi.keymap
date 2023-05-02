@@ -236,13 +236,13 @@
             key-positions = <11 21>;
         };
 
-        combo_dollar {
-            bindings = <&kp DOLLAR>;
+        combo_caret {
+            bindings = <&kp CARET>;
             key-positions = <12 22>;
         };
 
-        combo_caret {
-            bindings = <&kp CARET>;
+        combo_dollar {
+            bindings = <&kp DOLLAR>;
             key-positions = <13 23>;
         };
 
