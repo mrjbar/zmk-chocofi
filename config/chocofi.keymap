@@ -213,6 +213,11 @@
             key-positions = <1 11>;
         };
 
+        combo_semi {
+            bindings = <&kp SEMI>;
+            key-positions = <5 15>;
+        };
+
         combo_rbkt {
             bindings = <&kp RBKT>;
             key-positions = <6 16>;
@@ -300,10 +305,10 @@
         lower_layer {
             label = "LOWER";
             bindings = <
-  &kp TILDE   &kp N7     &kp N8     &kp N9     &trans     &trans &trans &trans &trans &trans
-  &kp TAB     &kp N4     &kp N5     &kp N6     &trans     &trans &trans &trans &trans &kp SEMI
-  &trans      &kp N1     &kp N2     &kp N3     &trans      &trans &trans &trans &trans &trans
-              &trans     &kp N0     &trans                   &trans &trans   &trans
+  &trans   &kp N7     &kp N8     &kp N9     &trans     &trans &trans &trans &trans &trans
+  &trans   &kp N4     &kp N5     &kp N6     &trans     &trans &trans &trans &trans &trans
+  &trans   &kp N1     &kp N2     &kp N3     &trans     &trans &trans &trans &trans &trans
+              &trans     &kp N0     &trans             &trans &trans &trans
             >;
         };
 
