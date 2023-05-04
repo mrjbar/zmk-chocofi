@@ -198,9 +198,9 @@
             key-positions = <18 19>;
         };
 
-        combo_lbkt {
-            bindings = <&kp LBKT>;
-            key-positions = <3 13>;
+        combo_lpar {
+            bindings = <&kp LPAR>;
+            key-positions = <1 11>;
         };
 
         combo_lbrc {
@@ -208,9 +208,14 @@
             key-positions = <2 12>;
         };
 
-        combo_lpar {
-            bindings = <&kp LPAR>;
-            key-positions = <1 11>;
+        combo_lbkt {
+            bindings = <&kp LBKT>;
+            key-positions = <3 13>;
+        };
+
+        combo_f1 {
+            bindings = <&kp F1>;
+            key-positions = <4 14>;
         };
 
         combo_semi {
