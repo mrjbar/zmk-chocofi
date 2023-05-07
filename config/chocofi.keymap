@@ -258,13 +258,13 @@
             key-positions = <12 22>;
         };
 
-        combo_dollar {
-            bindings = <&kp DOLLAR>;
+        combo_minus {
+            bindings = <AS(MINUS)>;
             key-positions = <13 23>;
         };
 
-        combo_minus {
-            bindings = <AS(MINUS)>;
+        combo_dollar {
+            bindings = <&kp DOLLAR>;
             key-positions = <14 24>;
         };
 
