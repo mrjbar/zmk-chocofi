@@ -183,58 +183,43 @@
             key-positions = <0 10>;
         };
 
-        combo_capword {
-            bindings = <&caps_word>;
-            key-positions = <16 17>;
-        };
-
-        combo_apos {
-            bindings = <&kp APOS>;
-            key-positions = <8 9>;
-        };
-
-        combo_quote {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <18 19>;
-        };
-
         combo_lpar {
             bindings = <&kp LPAR>;
             key-positions = <1 11>;
         };
 
-        combo_lbrc {
-            bindings = <&kp LBRC>;
+        combo_lbkt {
+            bindings = <AS(LBKT)>;
             key-positions = <2 12>;
         };
 
-        combo_lbkt {
-            bindings = <&kp LBKT>;
-            key-positions = <3 13>;
-        };
-
-        combo_f1 {
-            bindings = <&kp F1>;
-            key-positions = <4 14>;
-        };
-
-        combo_semi {
-            bindings = <&kp SEMI>;
-            key-positions = <5 15>;
-        };
-
         combo_rbkt {
-            bindings = <&kp RBKT>;
-            key-positions = <6 16>;
-        };
-
-        combo_rbrc {
-            bindings = <&kp RBRC>;
-            key-positions = <7 17>;
+            bindings = <AS(RBKT)>;
+            key-positions = <3 13>;
         };
 
         combo_rpar {
             bindings = <&kp RPAR>;
+            key-positions = <4 14>;
+        };
+
+        combo_left {
+            bindings = <&kp LEFT>;
+            key-positions = <5 15>;
+        };
+
+        combo_up {
+            bindings = <&kp UP>;
+            key-positions = <6 16>;
+        };
+
+        combo_down {
+            bindings = <&kp DOWN>;
+            key-positions = <7 17>;
+        };
+
+        combo_right {
+            bindings = <&kp RIGHT>;
             key-positions = <8 18>;
         };
 
@@ -268,7 +253,7 @@
             key-positions = <14 24>;
         };
 
-        combo_underscore {
+        combo_equal {
             bindings = <AS(EQL)>;
             key-positions = <15 25>;
         };
@@ -291,6 +276,21 @@
         combo_hash {
             bindings = <&kp HASH>;
             key-positions = <19 29>;
+        };
+
+        combo_capword {
+            bindings = <&caps_word>;
+            key-positions = <13 16>;
+        };
+
+        combo_apos {
+            bindings = <AS(APOS)>;
+            key-positions = <18 19>;
+        };
+
+         combo_semi {
+            bindings = <&kp SEMI>;
+            key-positions = <28 29>;
         };
     };
 
