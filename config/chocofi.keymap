@@ -208,15 +208,16 @@
             key-positions = <5 15>;
         };
 
-        combo_up {
-            bindings = <&kp UP>;
+        combo_down {
+            bindings = <&kp DOWN>;
             key-positions = <6 16>;
         };
 
-        combo_down {
-            bindings = <&kp DOWN>;
+        combo_up {
+            bindings = <&kp UP>;
             key-positions = <7 17>;
         };
+
 
         combo_right {
             bindings = <&kp RIGHT>;
