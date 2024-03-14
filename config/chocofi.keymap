@@ -321,9 +321,9 @@
         raise_layer {
             label = "RAISE";
             bindings = <
-  &trans  WS1       WS2       WS3     SS1          &none         &bt BT_PRV     &bt BT_NXT     &bt BT_CLR   &none
-  &trans  &trans    &trans    &trans  SS2          &trans        &kp F1         &trans         &trans       &trans
-  &trans  &trans    &trans    &trans  &trans       &trans        &trans         &trans         &trans       &trans
+  &trans  &trans    &trans    &trans  &trans       &none         &bt BT_PRV     &bt BT_NXT     &bt BT_CLR   &none
+  &trans  WS1       WS2       WS3     &trans       &kp F1        &trans         &trans         &trans       &trans
+  &trans  &trans    SS2       SS1     &trans       &trans        &trans         &trans         &trans       &trans
                         &none     &none   &none    &trans        &none      &none
             >;
         };
